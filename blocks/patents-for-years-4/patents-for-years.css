@@ -1,0 +1,63 @@
+@import "../../styles/main.css";
+.patents-for-years__title {
+  font-size: 30px;
+  line-height: 39.6px;
+  font-weight: 400;
+  font-family: "Arsenal", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.patents-for-years__slider {
+  position: relative;
+}
+.patents-for-years__slider__item {
+  box-shadow: 0 2px 4px rgba(51, 50, 48, 0.1), 0 0 4px rgba(51, 48, 48, 0.1);
+  padding: 16px;
+  max-width: 180px;
+  width: 100%;
+  border-bottom: 2px solid rgba(51, 48, 48, 0.1);
+  border-top: 1px solid rgba(51, 48, 48, 0.1);
+}
+.patents-for-years__slider__item__date {
+  font-size: 16px;
+  line-height: 20.06px;
+  font-weight: 700;
+  font-family: "Arsenal", sans-serif;
+  color: #7c6757;
+  margin-bottom: 16px;
+}
+.patents-for-years__slider__item__link {
+  display: inline-block;
+  text-transform: capitalize;
+  color: #7c6757;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22.5px;
+  border-bottom: 1px solid rgba(124, 103, 87, 0.2);
+}
+.patents-for-years__slider__btn {
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+  right: -25px;
+  transform: translateY(-30%);
+  width: 48px;
+  height: 48px;
+  box-shadow: 0 2px 4px rgba(51, 50, 48, 0.1), 0 0 4px rgba(51, 48, 48, 0.1);
+  z-index: 100;
+}
+
+@media (max-width: 1093px) {
+  .patents-for-years__slider__btn {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .patents-for-years__title {
+    font-size: 24px;
+    line-height: 31.08px;
+    font-weight: 400;
+    font-family: "Arsenal", sans-serif;
+    text-transform: uppercase;
+  }
+}/*# sourceMappingURL=patents-for-years.css.map */

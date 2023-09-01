@@ -1,0 +1,36 @@
+// google fonts Arsenal regular bold
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap');
+
+// normalize
+@import "./normalize.scss";
+
+// variables
+@import "./variables.scss";
+
+@font-face {
+    font-family: "Onest";
+    src: url(../assets/fonts/OnestRegular1602-hint.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Onest";
+    src: url(../assets/fonts/OnestMedium1602-hint.ttf);
+    font-weight: 500;
+}
+
+body {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.3px;
+    color: $main;
+}
+
+.container {
+    width: 100%;
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}

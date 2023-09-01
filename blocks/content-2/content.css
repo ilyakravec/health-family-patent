@@ -1,0 +1,48 @@
+@import "../../styles/main.css";
+.content {
+  margin-bottom: 70px;
+}
+.content__inner {
+  display: flex;
+}
+.content__about__title {
+  font-size: 30px;
+  line-height: 39.6px;
+  font-weight: 400;
+  font-family: "Arsenal", sans-serif;
+  text-transform: uppercase;
+  max-width: 680px;
+  margin-bottom: 16px;
+}
+.content__about__date {
+  font-size: 14px;
+  color: #7c6757;
+  margin-bottom: 16px;
+}
+.content__about__text {
+  max-width: 680px;
+}
+.content__img img {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 976px) {
+  .content__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .content {
+    margin-bottom: 50px;
+  }
+  .content__about__title {
+    font-size: 24px;
+    line-height: 31.08px;
+    font-weight: 400;
+    font-family: "Arsenal", sans-serif;
+    text-transform: uppercase;
+  }
+}/*# sourceMappingURL=content.css.map */

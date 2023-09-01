@@ -1,0 +1,76 @@
+@import "../../styles/main.css";
+.patents-current-year__title {
+  font-size: 30px;
+  line-height: 39.6px;
+  font-weight: 400;
+  font-family: "Arsenal", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.patents-current-year__slider {
+  position: relative;
+}
+.patents-current-year__slider__item {
+  max-height: 142px;
+  display: flex;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  padding: 16px;
+  max-width: 380px;
+  box-shadow: 0 2px 4px rgba(51, 50, 48, 0.1), 0 0 4px rgba(51, 48, 48, 0.1);
+  border-bottom: 2px solid rgba(51, 48, 48, 0.1);
+  border-top: 1px solid rgba(51, 48, 48, 0.1);
+}
+.patents-current-year__slider__item__img {
+  min-width: 72.73px;
+}
+.patents-current-year__slider__item__inner__text {
+  font-weight: 500;
+  color: #7c6757;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+.patents-current-year__slider__item__inner__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.patents-current-year__slider__item__inner__wrapper__date {
+  font-size: 14px;
+  color: #7c6757;
+}
+.patents-current-year__slider__item__inner__wrapper__link {
+  display: inline-block;
+  text-transform: capitalize;
+  color: #7c6757;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22.5px;
+  border-bottom: 1px solid rgba(124, 103, 87, 0.2);
+}
+.patents-current-year__slider__btn {
+  position: absolute;
+  top: 40%;
+  right: -20px;
+  transform: translateY(-40%);
+  width: 48px;
+  height: 48px;
+  box-shadow: 0 2px 4px rgba(51, 50, 48, 0.1), 0 0 4px rgba(51, 48, 48, 0.1);
+  border-radius: 50%;
+  z-index: 100;
+}
+
+@media (max-width: 1093px) {
+  .patents-current-year__slider__btn {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .patents-current-year__slider__item {
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+  }
+  .patents-current-year__slider__item__img {
+    width: 59.5px;
+  }
+}/*# sourceMappingURL=patents-current-year.css.map */

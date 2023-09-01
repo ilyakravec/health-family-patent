@@ -1,0 +1,96 @@
+@import "../../styles/variables.scss";
+
+.patents-current-year {
+
+    &__title {
+        @include h1;
+        margin-bottom: 24px;
+    }
+
+    &__slider {
+        position: relative;
+
+
+        &__item {
+            max-height: 142px;
+            display: flex;
+            column-gap: 24px;
+            padding: 16px;
+            max-width: 380px;
+            @include shadow;
+
+            border-bottom: 2px solid rgba(51, 48, 48, 0.1);
+            border-top: 1px solid rgba(51, 48, 48, 0.1);
+
+
+
+
+            &__img {
+                min-width: 72.73px;
+            }
+
+            &__inner {
+
+                &__text {
+                    font-weight: 500;
+                    color: $secondary;
+                    font-size: 14px;
+
+                    margin-bottom: 24px;
+                }
+
+                &__wrapper {
+                    display: flex;
+                    justify-content: space-between;
+
+                    &__date {
+                        font-size: 14px;
+                        color: $secondary
+                    }
+
+                    &__link {
+                        @include link;
+                    }
+                }
+            }
+        }
+
+        &__btn {
+            position: absolute;
+            top: 40%;
+            right: -20px;
+            transform: translateY(-40%);
+
+            width: 48px;
+            height: 48px;
+            @include shadow;
+
+            border-radius: 50%;
+
+            z-index: 100;
+        }
+    }
+}
+
+@media(max-width:1093px) {
+    .patents-current-year__slider__btn {
+        display: none;
+    }
+
+}
+
+@media(max-width:576px) {
+    .patents-current-year__slider__item {
+        display: flex;
+        flex-direction: column;
+
+        height: 420px;
+
+    }
+
+    .patents-current-year__slider__item__img {
+        width: 59.5px;
+    }
+}
+
+@import "../../styles/main.css";

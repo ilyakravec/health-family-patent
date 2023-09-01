@@ -1,0 +1,59 @@
+@import "../../styles/variables.scss";
+
+.content {
+    margin-bottom: 70px;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__about {
+
+        &__title {
+            @include h1;
+            max-width: 680px;
+
+            margin-bottom: 16px;
+        }
+
+        &__date {
+            font-size: 14px;
+            color: $secondary;
+
+            margin-bottom: 16px;
+        }
+
+        &__text {
+            max-width: 680px;
+        }
+    }
+
+    &__img {
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width:976px) {
+    .content__inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+
+
+    }
+}
+
+@media(max-width:576px) {
+    .content {
+        margin-bottom: 50px;
+    }
+
+    .content__about__title {
+        @include h1-small-size;
+    }
+}
+
+@import "../../styles/main.css"
