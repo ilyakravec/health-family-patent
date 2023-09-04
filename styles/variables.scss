@@ -55,6 +55,11 @@ $line-height: 20.3px;
         0 0 4px rgba(51, 48, 48, 0.1);
 }
 
+@mixin border {
+    border-bottom: 2px solid rgba(51, 48, 48, 0.1);
+    border-top: 1px solid rgba(51, 48, 48, 0.1);
+}
+
 //fonts
 $main-font: 'Onest', sans-serif;
 $secondary-font: 'Arsenal', sans-serif;

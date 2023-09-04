@@ -3,35 +3,41 @@
 .breadcrumbs {
     margin: 32px 0 24px;
 
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: auto;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+
+    }
+
     &__inner {
-        width: 100%;
-        overflow: hidden;
         display: flex;
-        column-gap: 15px;
+        gap: 8px;
 
-        overflow: hidden;
-
-
-
-        &__item {
-            transition: transform 0.3s ease;
+        &__link {
             white-space: nowrap;
             color: $gray;
             position: relative;
 
-            &:last-child {
+            &:not(:first-child):before {
+                content: "/";
+                display: inline-block;
+                margin-right: 8px;
+            }
+
+            &:not(:first-child, :nth-child(2), :nth-child(3)) {
                 text-overflow: ellipsis;
                 overflow: hidden;
-                white-space: nowrap;
             }
 
         }
+
     }
 }
 
-.slash {
-    color: #817b77;
-}
 
 
 @import "../../styles/main.css";

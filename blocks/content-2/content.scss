@@ -36,17 +36,14 @@
     }
 }
 
-@media(max-width:976px) {
+
+@media (max-width:600px) {
     .content__inner {
         display: flex;
         flex-direction: column;
         row-gap: 40px;
-
-
     }
-}
 
-@media(max-width:576px) {
     .content {
         margin-bottom: 50px;
     }
@@ -55,5 +52,6 @@
         @include h1-small-size;
     }
 }
+
 
 @import "../../styles/main.css"

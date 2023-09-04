@@ -8,7 +8,7 @@ $(document).ready(function () {
         0:{
             items:1,
         },
-        725:{
+        777:{
             items:2,
             
         },
