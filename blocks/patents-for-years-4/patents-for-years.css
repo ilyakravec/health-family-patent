@@ -35,6 +35,9 @@
   line-height: 22.5px;
   border-bottom: 1px solid rgba(124, 103, 87, 0.2);
 }
+.patents-for-years__slider__item__link:hover {
+  color: #7c6757;
+}
 .patents-for-years__slider__btn {
   border-radius: 50%;
   position: absolute;

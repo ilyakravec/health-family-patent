@@ -34,6 +34,10 @@
 
             &__link {
                 @include link;
+
+                &:hover {
+                    color: $secondary;
+                }
             }
         }
 
