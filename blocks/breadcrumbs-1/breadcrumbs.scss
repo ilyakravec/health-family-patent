@@ -22,6 +22,10 @@
             color: $gray;
             position: relative;
 
+            &:hover {
+                color: $gray ;
+            }
+
             &:not(:first-child):before {
                 content: "/";
                 display: inline-block;

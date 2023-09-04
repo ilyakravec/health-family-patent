@@ -18,6 +18,9 @@
   color: #817b77;
   position: relative;
 }
+.breadcrumbs__inner__link:hover {
+  color: #817b77;
+}
 .breadcrumbs__inner__link:not(:first-child):before {
   content: "/";
   display: inline-block;
