@@ -19,11 +19,11 @@
 
         &__link {
             white-space: nowrap;
-            color: $gray;
+            color: $brand-color-dark-2;
             position: relative;
 
             &:hover {
-                color: $gray ;
+                color: $brand-color-dark-2 ;
             }
 
             &:not(:first-child):before {
